@@ -1,0 +1,149 @@
+﻿.error-tooltip ul {
+    padding: 2px 15px;
+    list-style: none;
+    text-align: right;
+}
+
+.customtooltip {
+    top: 15px !important;
+}
+
+.custom-label {
+    padding-top: 5px;
+    text-align: right;
+}
+
+#nextBtn {
+    text-align: left;
+}
+
+#prevBtn {
+    text-align: right;
+}
+
+#payBtn {
+    text-align: center;
+}
+
+.loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 2s linear infinite;
+    float: left;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*#region uPayBit classes*/
+
+/*@import "hapoalim_fonts.css";*/
+/* 'Poalim-bit-light-webfont' */
+@font-face {
+    font-family: 'Poalim-bit-light-webfont';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("/Fonts/hapoalim_BIT.woff") format("woff");
+}
+
+.uPayBitDiv, .uPayBitContainer, .BitContainer {
+    min-height: 40px; /*46px;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%; /*328px;*/
+}
+
+#bit-payment-button {
+    background-image: url(/Images/Bit/bit_button.svg);
+    background-position: center;
+    background-size: cover;
+    height: 38px;
+    width: 240px;
+    border: none;
+    border-radius: 8px;
+}
+
+    #bit-payment-button:hover {
+        background-image: url(/Images/Bit/bit_button_hover.svg);
+    }
+
+    #bit-payment-button * {
+        --poalim-font-family: "Poalim-bit-light-webfont";
+        font-family: var(--poalim-font-family), arial, sans-serif;
+        color: #fff;
+        font-size: 1.0em;
+        text-shadow: 1px 1px #4e585e;
+    }
+
+    #bit-payment-button .bit-payment-txt {
+        display: none;
+        /*display: inline-block;
+        min-width: calc(100% - 35px);
+        font-family: var(--poalim-font-family), arial, sans-serif;
+        font-size: 25px;*/
+    }
+
+    #bit-payment-button .bit-logo {
+        display: none;
+        /*background: center no-repeat url("/Images/Logos/bit-btn-logo.svg");*/
+        /* background: center no-repeat url("https://public.bankhapoalim.co.il/bitcom/2.2.1/assets/bit-logo.svg"); */
+        /* background: center no-repeat url("https://upload.wikimedia.org/wikipedia/he/d/d6/Bit_logo.svg"); */
+        /*background-size: contain;
+        margin: 0 auto;
+        display: inline-block;
+        width: 25px;
+        height: 25px;*/
+    }
+
+    /*'underline' like effect*/
+    #bit-payment-button .bit-payment-txt:after {
+        display: block;
+        content: '';
+        border-bottom: solid 1.2px #019fb6;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in;
+        /*text-decoration: underline;*/
+        /*border-bottom: 1px solid;
+        color: #fff;*/
+    }
+
+    #bit-payment-button .bit-payment-txt:hover:after {
+        transform: scaleX(1);
+        transform-origin: 100% 50%;
+    }
+
+
+/*#endregion */
+
+/*#region PayMe payment iframe classes*/
+#payme-container-div,
+#cardcom-bit-container-div {
+    padding: 10px;
+    font-size: 16px;
+}
+
+    #payme-container-div .payme-payment-txt,
+    #cardcom-bit-container-div .cardcom-bit-payment-txt {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+        #payme-container-div .payme-payment-txt.error,
+        #cardcom-bit-container-div .cardcom-bit-payment-txt.error {
+            color: red;
+            font-weight: bold;
+        }
+/*#endregion */

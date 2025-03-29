@@ -1,0 +1,188 @@
+﻿/*
+    General style
+*/
+
+html * {
+    font-family: Arial;
+}
+body {
+    background: rgba(0,0,0,0.3);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-row {
+    margin-bottom: 5px;
+}
+/*.margin-top-20 {
+margin-top:20px;
+}*/
+.input-group-addon{
+    min-width: 60px;
+}
+
+.error-tooltip{
+    background-color: #ee0101;
+    color: white;
+    padding: 2px 4px;
+    width: 180px;
+    /*padding:0;*/
+}
+
+.error-tooltip-arrow{
+    border-bottom-color: #ee0101 !important;
+}
+/*padding*/
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.padding-25{
+    padding: 25px;
+}
+
+.padding-left-right-15{
+    padding: 0 15px !important;
+}
+
+.no-top-bottom-padding{
+    padding: 0;
+}
+
+.no-padding-left-rigth{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.agreementchkbox{
+    margin: 10px !important;
+}
+
+.allow-merchant-msg-checkbox {
+    margin: 10px !important;
+}
+
+#useTermModal{
+    z-index: 1051;
+}
+
+.error-modal{
+    top: 100px;
+}
+
+.alert{
+    margin-bottom: 0;
+}
+
+    .alert ul{
+        list-style: none;
+    }
+
+    .alert.alert-info{
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+.custom-input:focus{
+    /*border:1px solid #000;*/
+    background-color: #337ab7;
+    color: white;
+    outline-color: transparent;
+}
+
+.form-group{
+    margin-bottom: 5px;
+}
+
+.cell-wrapper{
+    max-width: 100%;
+}
+
+.group-img{
+    margin: 0 auto;
+}
+
+:focus::-webkit-input-placeholder{
+    color: white;
+}
+
+:focus:-moz-placeholder{
+    color: white;
+}
+
+/*ea4 header style*/
+#ea4-cardcom-heat-text {
+    text-align: center;
+    /*border-bottom: 1px solid#e5e5e5;*/ /***replaced with: .ea4-cardcom-heat-text:after***/
+}
+
+#ea4-head-image{
+    display:inline;
+}
+
+#ea4-modal-header{
+    text-align:center;
+}
+
+/*ea4 footer style*/
+.ea4-footer{
+    text-align: center;
+}
+
+.ea4-fulscreen-footer{
+    margin: 10px auto 50px auto;
+    text-align: center;
+}
+
+
+.CreditCardCompany{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+#ea4-submit-btn-fs{
+    text-align: center;
+}
+
+#group-comments-id{
+    padding:0 15px;
+}
+
+.group-comments-wrap *, .after-company-logo * {
+    /*background: pink;*/
+    width: 100% /*!important*/;
+    max-width: 100% !important;
+}
+
+.ea4-cardcom-heat-text:after {
+    border-bottom: 1px solid#e5e5e5;
+    content: '';
+    display: block;
+    width: 100%;
+    /***dynamic seperator length with variable***/
+    /*--hrSepr: 0%;
+    margin-inline: var(--hrSepr);
+    width: calc(100% - var(--hrSepr)*2);*/
+}
+
+.googleCaptchaRequiredErr {
+    border: red 2px solid;
+    border-radius: 5px;
+    height: 80px;
+    width: 306px;
+    margin-inline-end: -304px;
+    margin-top: -2px;
+    transition: all 500ms ease-in-out 0s;
+}
+
+.modal-content * {
+    font-family: inherit;
+}
